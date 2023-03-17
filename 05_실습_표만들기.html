@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS 연결 ✅ -->
+    <link rel="stylesheet" href="./05_실습_표만들기.css">
+
+</head>
+<body>
+
+
+<!-- 📚 버튼 --> 
+<!-- 🟦 로그인 버튼 
+        [주의] 1. onclick 에 함수를 연결할 때, '함수 실행' 이니까, () 괄호 까지 붙여야 해 --> 
+<button class="button-div" onclick="divBtn()"> 로그인 버튼 👏 </button>
+
+<!-- 🟦 이름, 나이, 내용 넣은 폼 
+        [부족한 점] label 이랑, input 태그 잘 모르겠음. -->
+<label for=""> 아이디 </label>
+<input type="text">
+
+<label for=""> 비밀번호  </label>
+<input type="text">
+
+<label for=""> 가입하기 </label>
+<input class="create_id" type="button">
+
+
+
+
+<!-- button-div 클릭하면, render함수에서, querySelector로. li 태그가 추가되는 부분 -->
+<ul id="tables">
+    <!-- 이 사이에 이제, innerHTML 로 잡은게 들어가! ✅ 
+    
+    예를들어서     
+    `<li> 이름은 : ${i.name} | 나이 : ${i.age} | 내용 : ${i.content} </li>` 이렇게 나옴 
+    -->
+</ul>
+
+
+
+
+
+
+</body>
+    <!-- 자바스크립트 연결 ✅ -->
+    <script src="./05_실습_표만들기.js"></script>
+
+</html>

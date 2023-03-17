@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./06_popup_index.css">
+
+</head>
+
+<body>
+    
+    <button onclick="openPopup()"> 팝업 열기 </button>
+
+    <!-- 클래스가 2개 부여된 모습 
+            클래스 간 구분은 "띄어쓰기!"" 로 구분됨
+            is active 가 켜지면 - 팝업이 켜지고 
+            is active 꺼지면 - 팝업 꺼짐 
+        -->
+
+
+        <!-- " is-active 를 넣으면 팝업이 뜬다.  -->
+    <div class="popup-wrap  "> 
+
+        <div class="popup-content">
+
+            <!-- 열려 있으면 닫게 만든다. 
+                    하나 만들어서, 닫게 하는데에 쓴다.  -->
+            <span onclick="openPopup();"> </span>
+        
+        </div>
+
+    </div>
+
+    
+    
+</body>
+
+<!-- 자바스크립트 위치 -->
+<script src="./06_popup_index.js"></script>
+
+</html>

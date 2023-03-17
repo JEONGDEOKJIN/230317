@@ -1,0 +1,111 @@
+body {
+
+    /* 남아있는 여백이 있어서 -> 확인하고 지워줌 */
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.popup-wrap {
+    /*  vw : 브라우저의 가로 크기 
+        vh : 브라우저의 세로  
+
+        100vh : 보고 있는 브라우저 창의 전체 높이 
+        100vw : 보고 있는 브라우저 창의 전체 너비 
+                                            */
+    width: 100vw;
+    height: 100vh;
+
+    /* ❓❓❓❓❓ */
+    position: fixed; 
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: none;
+
+}
+
+/* 클래스를 제어할 것 ⭐⭐⭐ */
+    /* 동작중 일때는 display 를 block 으로 해줘 */
+    /* popupwrap 과 is-active 를 '둘 다' 가지고 있을 때  */
+    /* 태그 하나가, 클래스 2개를 가질 때  */
+    .popup-wrap.is-active {
+    display: block;
+}
+
+
+.popup-wrap .popup-content {
+    background-color: #fff;
+    border-radius: 12px;
+    width: 300px;
+    height: 500px;
+
+    /* 보고있는 브라우저 기준으로 위치를 맞출 수 있음.
+        top, left 활용해서 가운데 오게 할 수 있음. ⭐⭐⭐⭐⭐⭐⭐  */
+    position: fixed;
+    top: 50%;       
+    left: 50%;
+
+    /* 가운데로 오게 하기 ⭐⭐⭐⭐⭐⭐⭐⭐⭐ 
+        이렇게 하면, 화면 사이즈 변경 시켜도 가능  */
+    transform: translate(-50%, -50%);
+}
+
+
+.popup-wrap .popup-content span {
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid; */
+
+    /* 안보이면, block 속성이 없는거임! ⭐⭐⭐⭐⭐⭐  
+        span 자체에는 block 이 없다는 거! */
+    display: block;
+    
+    position: absolute;
+    right: 0;   
+        /* 오른쪽으로 딱 붙게 됨 */
+
+    
+    cursor: pointer;
+    
+}
+
+/*  가상 선택자로 x 자 모양 만들기 */
+.popup-wrap .popup-content span::after, 
+.popup-wrap .popup-content span::before {
+
+    content: '';
+    width: 15px;
+    height: 4px;
+    background-color: black;
+    
+    border-radius: 5px;
+    
+    display: block;
+    
+    /* 가운데 정렬 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    /* 반지를 50%, 50% 빼고, 가운데로 오게 하기 */
+    transform: translate(-50%, -50%) rotate(45deg); 
+}
+
+.popup-wrap .popup-content span::before {
+    /* 중복되는거 지울거야 -> 위에 클래스를 중첩 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ */
+        /* content: '';
+        width: 15px;
+        height: 1px;
+        background-color: black;
+        display: block;
+
+        position: absolute;
+        top: 50%;
+        left: 50%; */
+
+ /* 반지를 50%, 50% 빼고, 가운데로 오게 하기 */
+ transform: translate(-50%, -50%) rotate(-45deg);
+
+}
