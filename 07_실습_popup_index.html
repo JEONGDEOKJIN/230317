@@ -16,16 +16,25 @@
 <!-- 팝업 열기 버튼 
         [해석] 1) 버튼이 클릭되면 2) openPopup 함수가 실행! -->
 <button onclick="openPopup()">
-    팝업 열기👐
+    팝업 열기👐div
 </button>
 
 
-<!-- is-active 를 넣으면 > 이 팝업이 뜬다. -->
-<div>
+<!-- 팝업이 뜨게 하는 부분 
+        [원리 이해] is-active 가, class 로 들어오면, 팝업이 뜬다. 
+        [궁금점] 어디에서 어떻게 되는건지 아직 모르겠어 😥😥😥 -->
 
+    <!-- 팝업 떴을 때 배경 -->
+    <div class="popup-wrap">
 
+        <!-- 실제로 팝업 창 디자인 -->
+        <div class="popup-content"> 
 
-</div>
+            <span onclick="openPopup"> </span>
+
+        </div>
+
+    </div>
 
 
 

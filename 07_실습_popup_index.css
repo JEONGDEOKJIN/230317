@@ -1,0 +1,50 @@
+body {
+
+    /* 색을 줘도 남아있어서 -> 여백을 지우기 */
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+/* 🟦 팝업이 뜨는 부분을 감싸는 부분 */
+.popup-wrap {
+
+    /*  vh : 보고있는 브라우저(view) 창의 전체 높이(height)
+        vw : 보고있는 브라우저(view) 창의 전체 너비(weight) 
+        
+        실익 : 브라우저 창이 커지건, 작아지건, 상관없이, 항상 그 비율을 원하는 디자인으로 만들 수 있음. */
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+    /* 항상 그 자리에 고정되게 하기 */
+    position: fixed;
+
+    /* 우선, 안 보이게 만들기 */
+    display: none;
+
+}
+
+
+/* 🟦 pop up 창 디자인 */
+    /* popupwrap 의 자식인 popup-content 를 선택
+        [배운점] 클래스를 선택할 때, 이렇게 '자식 클래스' 를 선택하기 ⭐⭐⭐ */
+.popup-wrap .popup-content {
+    
+    background-color: #fff;
+
+    border-radius: 12px;
+    width: 300px;
+    height: 500px;
+
+    /* 보고 있는 브라우저 기준으로 위치를 맞추기 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+

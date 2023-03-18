@@ -36,15 +36,15 @@ function openPopup() {
 
         // popup.classList.contains("is-active") : is-active 가 있는지 확인하기 
     
-    // if (popup.classList.contains("is-active")) {
-    //     // class 가 있으면 
+    if (popup.classList.contains("is-active")) {
+        // class 가 있으면 
 
-    // } else {
-    //     // class 가 없으면! 
+    } else {
+        // class 가 없으면! 
 
-    //     popup.className = popup.className + " is-active";
+        popup.className = popup.className + " is-active";
 
-    // }
+    }
 
 
     // 문자열 버전 

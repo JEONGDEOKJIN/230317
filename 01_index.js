@@ -213,12 +213,13 @@
 
     // 🟦 텍스트를 태그에 넣어주고 싶으면? 
         // 1. 태그를 가져오기 
-            // div1
-            // div1.innerHTML = "gg";
+            div1
+            div1.innerHTML = "gg";
                 // div1 태그의 내용을 추가할 수 있다. 
                 // <div> 이 사이에 "gg" 가 추가 된다. <div>
                 // innerHTML 은 저 사이에 추가 된다는 말 
             console.log(div1.innerHTML)
+
 
         // 2. 
         // 만약, div 가 이중 으로 있어도 -> div 태그가 표시된채 뜬다. 
