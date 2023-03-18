@@ -30,12 +30,12 @@ body {
 }
 
 
-/* 🟦 pop up 창 디자인 */
+/* 🟦 팝업 떴을 때 보이는 부분, 하얀색 팝업 */
     /* popupwrap 의 자식인 popup-content 를 선택
         [배운점] 클래스를 선택할 때, 이렇게 '자식 클래스' 를 선택하기 ⭐⭐⭐ */
 .popup-wrap .popup-content {
     
-    background-color: #fff;
+    background-color: antiquewhite;
 
     border-radius: 12px;
     width: 300px;
@@ -45,6 +45,25 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
+
+    /* 가운데로 오게 하기 ⭐⭐⭐⭐⭐⭐⭐⭐⭐ 
+    이렇게 하면, 화면 사이즈 변경 시켜도 가능  */
+    transform: translate(-50%, -50%);
 }
 
+
+/* 🟦 is-active 가 있을 때, 만들어진 버튼 제어하기 ⭐⭐⭐⭐⭐  */
+    /* 동작중 일때는 display 를 block 으로 해줘 */
+    /* popupwrap 과 is-active 를 '둘 다' 가지고 있을 때  */
+    /* 태그 하나가, 클래스 2개를 가질 때  */
+    
+.popup-wrap.is-active {
+    display: block;
+}
+
+
+/* 🟦 x 자리가 표시할 위치(영역) 잡기 */
+
+
+/* 🟦 가상 선택자 활용해서 x 만들기 */
 
