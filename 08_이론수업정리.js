@@ -1,3 +1,7 @@
+
+
+
+
 // 🟦 생성함수 
 
     // 이건 직접 만들어보면서, 느낄 수 있음. 
@@ -135,7 +139,7 @@
         console.log(divArr[3])      // '배열' 중 index 로 하나를 선택
 
             // [시사점] 
-                // 1. result 는 '배열' 로 가져오게 된다. 
+                // 1. result 는 ⭐'배열'⭐ 로 가져오게 된다. 
                 // 2. '배열' 중 'index' 를 넣어서, 원하는 태그만 취할 수 있다. 
                 // 3. '⭐해당 class를 가진 모든 태그⭐' 중 '⭐index⭐' 를 이용해서, '하나의 태그만 선택' 할 수 있다는 점 ⭐⭐⭐⭐⭐⭐ 
 
@@ -189,24 +193,187 @@
     div8[3].innerHTML = "난 class_div2 클래스를 가진 4번째 태그야. 지금 innerHTML 로 수정했어";
 
 
-    
-// 🟦 버튼에 기능을 넣어보기
 
-    // 1. 함수로 넣기 
-        // 1.1 버튼을 누르면 -> 함수를 실행시키기 
+// 🟦 [조각기능] '버튼' 을 누르면 -> 'div2 class' 가 있는 태그, 전부에, '텍스트' 를 넣기
 
-        function btnFn () {
+    // 1. '버튼' 만들기 
+        // ✅ html 로 이동
+        // button 태그에서, onclick 이벤트가 발생하면 -> btnFn() 함수 실행되게 셋팅 
+            // <button onclick="btnFn()"> 글자 입력하기 </button>
 
-            let class_div = document.querySelectorAll('.class_div2');   // 해당 클래스를 갖고 있는 태그들을 class_div 변수에 배열로 담고 
+    // 2. '버튼' 태그에 'onclick' 이벤트가 일어나면 실행되는 btnFn() 함수 만들기 
+    function btnFn() {
+
+        let class_div = document.querySelectorAll('.class_div2');
+            // [해석] 'class_div2'클래스를 갖는 태그를 모두 찾고 -> 배열로 만들어서 -> class_div 변수에 담기
+        
+        class_div.forEach(function(i) {
             
-            // 그 배열을 foreach 로 순회하면서, 아이템을 매개변수로 받았다. 
-            class_div.forEach(function(i) {
-                // console.log(i); // 잘 들어오는지 확인
+            // 디버깅
+                // console.log(i) 
 
-                i.innerHTML = "안에 있는 글자를 이걸로 통일👍, 너 버튼 누르면 -> 해당 클래스 이름을 가진 태그 배열로 가져오고 -> innerHTML 을 써서, 한꺼 번에 내용을 바꿔~~"
+            // 배열에 담겨져 있는, class 를 하나씩 꺼내서, innerHTML 로 텍스트 넣어주기 ⭐⭐⭐
+                i.innerHTML = `버튼이 눌려지면, -> 이 글씨가 나올거야. 
+                        class 명이 class_div2 인 곳에 모두 기재될거야.`
+            
+            // [느낀점] 
+                // 배열을 순회하면서 가져오니까, index 를 다르게 부여하면, 다른게 만들어질 수도 있을 것 같아. 
+        })
+    }
 
-            })
-        }
 
-    // html 에서 '함수' 를 가져가서 사용하자.
-        // 함수 이름을 복사 -> html 로 이동 -> button 에 붙여넣기 -> 이렇게 <button onclick="btnFn()">
+
+
+// 📘 [조각기능] script 태그 위치를 body 밑이 아니라, 다른 곳에 두어야 할 경우 
+
+// 🟦 scrpit 태그의 위치와 로드 순서, onload 의 활용 
+
+        // scrpt 를 body 위에 있는 경우
+            // let a = document.querySelector(".aaa")
+            // console.log(a);
+                // aaa 클래스를 가진 태그를 가져온다 -> 그걸 보자 
+                // 응? null 뜨네? 
+                // 내려오다가 > 스크립트 만나면 스크립트 읽는다. 
+                // 스크립트 가면 -> js 를 본다 -> aaa? 없네? -> null 이 나온다. -> so, html 에서 scipt 는 body 아래 
+
+
+
+        // 근데 꼭, script 를 위에 써야 하면? ⭐⭐⭐⭐⭐ 
+            // onload 하면 - html 다 읽고 나서 - 여기를 실행하게 됨. ⭐⭐⭐⭐⭐ 
+            // window.onload = function()  {
+            //     let a = document.querySelector(".aaa")
+            //     console.log(a);
+                
+            //         }
+
+        // 음...............📛📛📛📛📛📛📛📛📛 
+
+                // console.log(a) // 지역 변수 임!!!!! -> 추가 작업이 필요하면 저 안에서 다 하면 됨. 
+
+
+    // 태그가 다 만들어지지도 않았는데, 가져오라고 하니까 발생하는 문제 ⭐⭐⭐⭐⭐⭐ 
+
+
+
+
+    
+
+// 📘 [조각기능] 이름, 나이, 내용 input 에 기재하고 -> 버튼을 누르면 -> list 로 보이게 하기 [게시판 기능]
+
+
+// 🟦 전역변수 
+let objArr = [];
+
+
+// 🟦 input 태그에 이름, 나이, 내용 기재할 수 있게 만들기 
+    // ✅ HTML 로 이동 
+
+
+// 🟦 객체 만들기 위해서 '생성자 함수' 선언 
+    function create(_name, _age, _content) {
+        this.name = _name;
+            // [해석] 1) new 키워드로 만들어진 '빈 객체' 에 name 이라는 키 값을 만들고 ⭐⭐⭐
+                    // 2) 그 value 로 매개변수를 통해 입력받은걸 넣는다. 
+        this.age = _age;
+        this._content = _content;
+    }
+    // [해석] ⭐⭐⭐⭐⭐⭐⭐⭐⭐
+        // 매개변수로 name 이 들어오면 -> this 객체에 name 이라는 key 를 만들어준다
+        // 밑에서 new 생성자로 빈 객체를 만들건데, this 는 new 로 만들어진 빈객체를 가리킨다. 
+        // 빈객체의 key를 만들려면, 여기에서, this 다음의 워딩을 바꿔준다.
+
+
+
+// 🟦 queryselectorAll 로 HTML 에서 적은 걸 '배열'로 가져오고 -> '생성자함수' 써서, 이걸 '객체' 로 만들기
+    // [궁금한점] '객체' 로 만드는 이유는❓❓❓❓❓❓
+        // 배열을 쓰건, 뭘 쓰건 상관은 없을 것. 다만, 객체를 쓰면, 다루기가 좀 쉬워서 그러려나? 
+    
+    function addArr () {
+
+        // queryselectorAll로 inputs 태그에 적은 텍스트 가져오기
+        let inputs = document.querySelectorAll('input');
+            // [배운점] 
+                // 1.⭐⭐⭐ input 태그에 뭔가를 쓰면, 그 뭔가를 적은게 input 으로 들어오는 구나 ⭐⭐⭐
+                // 2. 그러면, label 은 input 이 뭔지를 설명하는 기능을 하는 거 겠구나. 
+            // 디버깅 
+                console.log(inputs)
+        
+            // [배운점] ⭐⭐⭐ 
+                // inputs 아래에 있는 값에 접근하려면, 어떻게 해야 할까? ⭐⭐⭐⭐⭐
+                // 예제 코드를 보고 했는데, 이걸 외울게 아니라, '개발자 도구' 에서 'inputs' 객체 안을 탐구! 해보면 된다. ⭐⭐⭐⭐⭐ 
+                // 즉, '객체' 를 활용하게 되면, 콘솔창에 찍어보고, 가져올 수 있는 것들을 확인! ⭐⭐⭐⭐⭐ 
+
+        // inputs의 데이터 구조를 확인하고, 입력한 값에 접근하기 ⭐⭐⭐ 
+        console.log(inputs[0].value);
+        console.log(inputs[1].value);
+        console.log(inputs[2].value);
+            // [더 알아볼 것]
+                // '배열' 혹은 '객체' 데이터에 접근하는 방식 
+                // inputs[0].value 뿐 아니라 inputs[0]['value'] 이것도 되나?
+            // [부족한점📛]
+                // 이 순간, addArr(); 를 실행해서, value 가 잘 찍히는지 보고 싶었음. 
+                // 근데, 버튼을 달아야 확인이 되었음. 
+
+        // 뽑아낸 값으로 '객체' 만들기 (생성자 함수 '실행')
+        let obj = new create(inputs[0].value, inputs[1].value, inputs[2].value)
+            // [해석]
+                // new 키워드로 빈객체를 만들고 
+                    // -> 함수에서 this 를 그 객체를 참조해서 -> name key 에는 value 를 매개변수로 "이름"
+                    // age key 에는 value 를 매개변수로 10
+                    // content key 에는 value 를 매개변수로 "나 콘텐츠~" 로 전달해서 넣었음. 
+                // 이렇게 만들어진 객체를 obj 라는 지역변수에 넣어준다.
+
+
+        // '객체' 를 '배열(리스트)' 안에 넣는다. 
+        objArr.push(obj);
+            // 디버깅
+            console.log(objArr)
+
+    }
+
+
+
+// 🟦 render 기능 만들기 
+    // [세부설명] 결과물로 나온 '배열' 에 forEach를 써서, `innerHTML` 에 넣어줄 텍스트 만들고 -> innerHTML 사이에 넣어주기
+
+    function render(){
+
+        // 렌더링 하기 전 값 초기화 ⭐⭐⭐ 
+        let text = ""
+        
+        // push 된 배열에 있는 모든 값(첫 번째 입력, 두 번째 입력 모두)을 가져와서 -> text 에 담는다. 
+        objArr.forEach(function(i) {
+          
+            text = text + `<li> 이름 : ${i.name} | 나이 : ${i.age} | 내용 : ${_content} </li>`
+            // += 을 쓰면 -> 왜 누르는 만큼, 늘어나지❓❓❓❓❓❓❓❓❓❓❓❓❓❓ 
+
+                // `+=` 는 원래 있는 값에 추가! 를 시키는 연산자 ⭐⭐⭐⭐⭐ 
+                // += 5 : 원래 있는 값에 '덧 붙인다.' 
+                // 원래 있는 문자열에 뒤로 내용을 추가 
+                // i.name 여기에 중복되어서 들어가는 거야 ⭐⭐⭐⭐⭐ 
+                    // console.log(i.name)
+                    // 왜냐면, 두 번째 누르면 -> push 되어서 다시 리스트에 들어가니까. ⭐⭐⭐
+   
+        })
+    
+        console.log(text)
+
+        // 위에서 만든 text 를 inner HTML 에 넣어준다. 
+        document.querySelector('#tables').innerHTML = text;
+
+    }    
+
+
+
+// 🟦 위의 기능 모아서 divBtn 함수 만들기 
+function divBtn () {
+
+    addArr();
+
+    render();
+
+}
+
+
+// [부족한 점📛]
+    // 레퍼런스 타입 관련해서 좀 더 공부해야 할거 같음

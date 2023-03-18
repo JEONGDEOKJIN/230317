@@ -1,0 +1,17 @@
+.button-div {
+
+    border: 1px;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border-radius: 12px;
+    box-shadow: 1px 1px 1px;
+
+    /* 글자를 넣으면 가운데로 올것임 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* 올라갔을 때 손가락 */   
+    cursor: pointer;
+}

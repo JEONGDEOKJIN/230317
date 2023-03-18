@@ -9,8 +9,12 @@ function openPopup() {
     let popup = document.querySelector(".popup-wrap");
         //console.log(popup)  // [결과물] <div class="popup-wrap"> ... </div> 이렇게 나옴 
 
-    // console.log(popup.classList)
+    console.log(popup.classList)
+        // popup 이라는 변수에는 popup-wrap 클래스 이름을 가진 태그가 들어가 있음. 
+        // popup 안에, popupwrap 과 동일한 레벨에 있는 클래스를 알려줘? 
 
 }
+
+
 
 
