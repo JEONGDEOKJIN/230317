@@ -1,0 +1,447 @@
+/* -----------------------기본 설정 START -------------------------- */
+
+/* 🟦 남아있는 여백 지우고 시작하기 */
+body {
+
+    /* 남아있는 여백이 있어서 -> 확인하고 지워줌 */
+    margin: 0;
+    padding: 0;
+
+}
+
+/* 🟦 box 크기 잴 때, border 포함해서, 보이는대로 재기  */
+* {
+    box-sizing: border-box;
+
+}
+
+
+
+/* 🟦 img태그에 사진 넣을때, 원본 비율 유지하면서, container 안에 있게 하기 */
+img {
+
+    /* 사진 비율 조정은 container 에서 하기 (실익 비교는 하면서 진행) 🟧  */
+    width: 100%;
+    height: 100%;
+
+    /* 원본 사진이 crop 되어서 나오는 느낌 (이걸 해야, 안 찌그러짐) */
+    object-fit: cover;
+
+}
+
+
+/* 🟦 p 태그에 텍스트 쓸 때, container 넘어가면, 점점점, 1줄로 써지게 하기 
+    ✅ width, height 없이도 가능
+    ✅ 이걸, p태그를 감싸는 container 에게 하면 error 
+    ✅ 이걸 p태그에 걸어줘야 함. 
+                               */
+p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+
+/* 🟦 가운데 오게 하기
+    ✅ text 를 가운데로 오게 하려면, p 태그를 감싸는 container 에게, 해당 클래스를 붙인다. 
+    ✅ img 를 가운데 오게 하려면, img 태그를 감싸는 container 에게!
+    ✅ 하위 div 를 가운데 오게 하려면, div 를 감싸는 wrap 에게! */
+.align_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+
+/* -----------------------기본 설정 END -------------------------- */
+
+
+
+/* 로그인 창 전체 영역 */
+
+.login-background-image-area {
+
+    /* 브라우저에서 보이는대로 크기를 설정하기 
+        [실익]
+            1. 화면이 반응형으로 보이게 된다. 어떻게 하건, 그 비율을 유지하게 된다. */
+    width: 95vw;
+    height: 95vh;
+    /* 왼쪽에서 떨어지는 수치, 위에서 떨어지는 수치는 변경 가능 ✅✅✅✅✅  */
+    left: 2%;
+    top: 3%;
+
+    background-color: antiquewhite;
+
+    /* 항상 그 자리에 고정 
+        [궁금한 점] 이건 왜 필요하지? */
+    position: fixed;
+
+}
+
+
+
+.login-background-image-area .login-whole-area {
+    
+    height: 380px;
+    width: 570px;
+    border-radius: 12px;
+
+    background-color: yellowgreen;
+
+    /* 이게 하나의 set 로 움직임. 
+        translate를 0,0 으로 하면, 왼쪽 상단, 을 기준으로 잡혀짐 
+        그래서 translate 를 -50%, -50% 로 줘서 가운데로 오게 해야 함 */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(0,-30%);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+
+}
+
+
+/* 너비는 아직 미정, 눈대중✅  */
+.login-background-image-area .login-whole-area .login-id-pw-area {
+
+    width: 550px;
+    height: 170px;
+    
+    background-color: indigo;
+
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+
+.login-background-image-area .login-whole-area .login-id-pw-area .login-left-area  {
+    
+    width: 400px;
+    height: 150px;
+    background-color: greenyellow;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+
+.login-background-image-area .login-whole-area .login-id-pw-area .wrap-id-input-label {
+
+    width: 390px;
+    height: 70px;
+
+    background-color:  green;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.login-background-image-area .login-whole-area .login-id-pw-area .wrap-id-input-label .id-label-deco {
+
+    width: 100px;
+    height: 30px;
+    background-color: lightsalmon;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-background-image-area .login-whole-area .login-id-pw-area .wrap-id-input-label .id-input-deco {
+    width: 200px;
+    height: 30px;
+
+    background-color: brown;
+}
+
+
+.login-background-image-area .login-whole-area .login-id-pw-area .wrap-pw-input-label {
+    width: 390px;
+    height: 70px;
+    
+    background-color: peru;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+
+.login-background-image-area .login-whole-area .login-id-pw-area .wrap-pw-input-label .pw-label-deco {
+
+    width: 100px;
+    height: 30px;
+    background-color: powderblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-background-image-area .login-whole-area .login-id-pw-area .wrap-pw-input-label .pw-input-deco {
+
+    width: 200px;
+    height: 30px;
+    background-color: indianred;
+}
+
+
+.login-background-image-area .login-whole-area .login-id-pw-area .login-right-area {
+
+    width: 120px;
+    height: 120px;
+
+    background-color: bisque;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-background-image-area .login-whole-area .login-id-pw-area .wrap-login-button {
+    width: 110px;
+    height: 110px;
+    
+    background-color: lightcoral;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-background-image-area .login-whole-area .login-id-pw-area .wrap-login-button .login-button{
+    background-color: teal;
+
+    width: 100px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login-button-font {
+    font-size: 20px;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+
+
+.login-background-image-area .login-whole-area .idSave-findIdPw {
+
+    width: 550px;
+    height: 60px;
+
+    background-color: floralwhite;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: relative;
+}
+
+
+.login-background-image-area .login-whole-area .idSave-findIdPw .idSave_area {
+    width: 150px;
+    height: 30px;
+
+    background-color: green;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: absolute;
+    left: 70px;
+
+}
+
+
+
+
+.login-background-image-area .login-whole-area .idSave-findIdPw .findId_area {
+    width: 120px;
+    height: 30px;
+
+    background-color: blue;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: absolute;
+    left: 300px;
+
+}
+
+
+.login-background-image-area .login-whole-area .idSave-findIdPw .findPw_area {
+    width: 120px;
+    height: 30px;
+
+    background-color: yellow;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: absolute;
+    left: 430px;
+
+
+}
+
+
+
+
+.login-background-image-area .login-whole-area .empty-area-1 {
+    width: 550px;
+    height: 10px;
+
+    background-color: gray;
+
+
+}
+
+.login-background-image-area .login-whole-area .empty-area-2 {
+    width: 550px;
+    height: 20px;
+
+    background-color: gray;
+
+
+}
+
+
+.login-background-image-area .login-whole-area .join-homepage-exit {
+
+    width: 550px;
+    height: 100px;
+
+    background-color: hotpink;  
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.login-background-image-area .login-whole-area .join-homepage-exit .wrap-join-button {
+
+    width: 120px;
+    height: 80px;
+
+    background-color: bisque;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-background-image-area .login-whole-area .join-homepage-exit .wrap-join-button .join-button {
+    background-color: teal;
+
+    width: 100px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.join-button-font {
+    font-size: 20px;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+
+
+.login-background-image-area .login-whole-area .join-homepage-exit .wrap-homepage-button {
+
+    width: 120px;
+    height: 80px;
+
+    background-color: bisque;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-background-image-area .login-whole-area .join-homepage-exit .wrap-homepage-button .homepage-button {
+    background-color: teal;
+
+    width: 100px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.homepage-button-font {
+    font-size: 20px;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+
+.login-background-image-area .login-whole-area .join-homepage-exit .wrap-exit-button {
+
+    width: 120px;
+    height: 80px;
+
+    background-color: bisque;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-background-image-area .login-whole-area .join-homepage-exit .wrap-exit-button .exit-button{
+    background-color: teal;
+
+    width: 100px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.exit-button-font {
+    font-size: 20px;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
