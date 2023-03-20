@@ -1,0 +1,4082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메가박스</title>
+
+    <link rel="stylesheet" href="./15.메가박스.css">
+</head>
+
+<body>
+
+
+
+    <!-- 전체 테두리 쌓는거 -->
+    <div class="inner_wrap">
+
+
+
+        <!-- 메뉴 bar & 튀어나올 놈  -->
+        <div class="tab-menu">
+
+            <!-- 첫 번째 메뉴 -->
+            <input class="tab01" type="radio" id="tab01" name="tabmenu">
+            <label for="tab01"> 박스오피스 </label>
+
+            <!-- 두 번째 메뉴 -->
+            <input class="tab02" type="radio" id="tab02" name="tabmenu">
+            <label for="tab02"> 상영예정작 </label>
+
+            <!-- 세 번째 메뉴 -->
+            <input class="tab03" type="radio" id="tab03" name="tabmenu" checked>
+            <label for="tab03"> 특별상영 </label>
+
+            <!-- 네 번째 메뉴 -->
+            <input class="tab04" type="radio" id="tab04" name="tabmenu" checked>
+            <label for="tab04"> 필름 소사이어티 </label>
+
+            <!-- 다섯 번째 메뉴 -->
+            <input class="tab05" type="radio" id="tab05" name="tabmenu" checked>
+            <label for="tab05"> 클래식 소사이어티 </label>
+
+
+
+            <!-- 띄워질 놈들 
+                        각각 class 가 2개씩 있음.  -->
+
+            <div class="box item1">
+                <!-- 아... 여기 그거 삐져나오게 하는거 ... 처리 있었는데 📛📛📛 hidden?  -->
+                <p>가장 드라마틱한 가창력을 지닌 라드바노프스키의 격정적인 메데아!
+                    배신한 남편에게 확실하고 치명적인 복수를 계획해 충격과 전율을 일으킨다.
+                    그러나 유려한 아름다움으로 공감을 불러일으키는 케루비니 음악의 힘!</p>
+            </div>
+
+            <div class="box item2"> 2번박스 </div>
+
+            <div class="box item3"> 3번박스 </div>
+
+            <div class="box item4"> 4번박스 </div>
+
+            <div class="box item5"> 5번박스 </div>
+
+
+
+
+        </div>
+
+
+        <!-- 검색 bar -->
+        <div class="search_movie_list_area">
+
+            <div class="wrap_date_letter_result">
+
+                <!-- 개봉일순 -->
+                <div class="order_by_date">
+                    <p>개봉일순</p>
+                </div>
+
+                <!-- | -->
+                <div class="order_by_division">
+                    <p>|</p>
+                </div>
+
+
+                <!-- 가나다순 -->
+                <div class="order_by_letter">
+                    <p>날짜순</p>
+                </div>
+
+                <!-- 12개 영화 검색되었습니다. -->
+                <div class="search_result">
+                    <p>12개의 영화가 검색되었습니다.</p>
+                </div>
+
+            </div>
+
+
+            <!-- 검색 기능 : 여기에 넣으면 되는건지 확인 ✅  -->
+            <div class="text-box">
+
+                <input type="text">
+
+            </div>
+
+        </div>
+
+
+        <!-- ⭐⭐⭐⭐⭐ 여기 start -->
+        <div class="movie_total_wrap">
+            <!-- 탭 클릭하면 -> 이 박스오피스가 나와야 함. -->
+
+            <!-- 박스오피스 : 📛 ol, li 태그 활용 📛📛📛📛📛📛📛📛  -->
+            <div class="movie_list_boxoffice item01">
+
+                <!-- 첫 번째 줄 -->
+                <ul class="movie_list_unordered">
+
+                    <!-- 첫 번째 영화 -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 두 번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> ⭐⭐⭐⭐⭐ 🕵️‍♂️🕵️‍♂️🕵️‍♂️🕵️‍♂️🕵️‍♂️🕵️‍♂️🕵️‍♂️ </p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+                            <!-- 버튼 태그  -->
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+
+
+                    <!-- ver2 3번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 4번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+
+
+
+
+
+                </ul>
+
+
+                <!-- ver2 두 번째 줄 -->
+
+                <ul class="movie_list_unordered">
+
+                    <!-- 첫 번째 영화 -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 두 번째 영화  -->
+
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+                    <!-- ver2 3번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 4번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+
+
+
+
+
+                </ul>
+
+
+                <!-- ver2 세 번째 줄  -->
+
+                <ul class="movie_list_unordered">
+
+                    <!-- 첫 번째 영화 -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 두 번째 영화  -->
+
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+                    <!-- ver2 3번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 4번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+
+
+
+
+
+                </ul>
+
+
+            </div>
+
+
+            <!-- 상영예정작 -->
+            <div class="movie_list_upcoming item02">
+
+                <!-- 첫 번째 줄 -->
+                <ul class="movie_list_unordered">
+
+                    <!-- 첫 번째 영화 -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “👍👍👍👍👍👍 wn 어물쩡.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 두 번째 영화  -->
+
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+                    <!-- ver2 3번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 4번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+
+
+
+
+
+                </ul>
+
+
+                <!-- ver2 두 번째 줄 -->
+
+                <ul class="movie_list_unordered">
+
+                    <!-- 첫 번째 영화 -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 두 번째 영화  -->
+
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+                    <!-- ver2 3번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 4번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+                </ul>
+
+
+                <!-- ver2 세 번째 줄  -->
+
+                <ul class="movie_list_unordered">
+
+                    <!-- 첫 번째 영화 -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 두 번째 영화  -->
+
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+                    <!-- ver2 3번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 4번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- 특별 상영 -->
+            <div class="movie_list_special item03">
+
+                <!-- 첫 번째 줄 -->
+                <ul class="movie_list_unordered">
+
+                    <!-- 첫 번째 영화 -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 두 번째 영화  -->
+
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+                    <!-- ver2 3번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 4번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+
+
+
+
+
+                </ul>
+
+
+                <!-- ver2 두 번째 줄 -->
+
+                <ul class="movie_list_unordered">
+
+                    <!-- 첫 번째 영화 -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 두 번째 영화  -->
+
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+                    <!-- ver2 3번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 4번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+
+
+
+
+
+                </ul>
+
+
+                <!-- ver2 세 번째 줄  -->
+
+                <ul class="movie_list_unordered">
+
+                    <!-- 첫 번째 영화 -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 두 번째 영화  -->
+
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+                    <!-- ver2 3번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 4번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+
+
+
+
+
+                </ul>
+
+
+
+
+
+
+            </div>
+
+
+            <!-- 필름 소사이어티 -->
+            <div class="movie_list_film_sc item04">
+
+                <!-- 첫 번째 줄 -->
+                <ul class="movie_list_unordered">
+
+                    <!-- 첫 번째 영화 -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 두 번째 영화  -->
+
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+                    <!-- ver2 3번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 4번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+
+
+
+
+
+                </ul>
+
+
+                <!-- ver2 두 번째 줄 -->
+
+                <ul class="movie_list_unordered">
+
+                    <!-- 첫 번째 영화 -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 두 번째 영화  -->
+
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+                    <!-- ver2 3번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 4번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+
+
+
+
+
+                </ul>
+
+
+                <!-- ver2 세 번째 줄  -->
+
+                <ul class="movie_list_unordered">
+
+                    <!-- 첫 번째 영화 -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 두 번째 영화  -->
+
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+                    <!-- ver2 3번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 4번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+
+
+
+
+
+                </ul>
+
+
+
+
+
+
+            </div>
+
+
+            <!-- 클래식 소사이어티 -->
+            <div class="movie_list_classic_sc item05">
+
+                <!-- 첫 번째 줄 -->
+                <ul class="movie_list_unordered">
+
+                    <!-- 첫 번째 영화 -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 두 번째 영화  -->
+
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+                    <!-- ver2 3번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 4번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+
+
+
+
+
+                </ul>
+
+
+                <!-- ver2 두 번째 줄 -->
+
+                <ul class="movie_list_unordered">
+
+                    <!-- 첫 번째 영화 -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 두 번째 영화  -->
+
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+                    <!-- ver2 3번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 4번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+
+
+
+
+
+                </ul>
+
+
+                <!-- ver2 세 번째 줄  -->
+
+                <ul class="movie_list_unordered">
+
+                    <!-- 첫 번째 영화 -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 두 번째 영화  -->
+
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+                    <!-- ver2 3번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- ver2 4번째 영화  -->
+                    <li>
+                        <!-- 레이아웃  -->
+                        <div class="movie_list_inner">
+
+                            <!-- 영화 포스터 -->
+                            <div class="movie_poster_area item_poster">
+                                <div class="sub_tag">
+                                    <div class="movie_summary">
+                                        “이 근처에 폐허 없니? 문을 찾고 있어”
+                                        규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는
+                                        문을 찾아 여행 중인 청년 ‘소타’를 만난다.
+                                    </div>
+                                </div>
+                                <img class="movie_item_poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg"
+                                    alt="">
+
+                            </div>
+
+                            <!-- 영화 제목  -->
+                            <div class="movie_title_area">
+                                <p class="age_12"> </p>
+                                <p class="movie_title"> [오페라] 메데아 @The Met2023</p>
+
+                            </div>
+
+                            <!-- 영화 예매율, 날짜  -->
+                            <div class="movie_rate_date_area">
+
+                                <div class="movie_rate">
+                                    <p> 예매율 0.5% </p>
+                                </div>
+
+                                <div class="movie_date">
+                                    <p>개봉일 2023.03.07</p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 버튼 태그  -->
+
+                            <div class="movie_button_area">
+
+                                <div class="button_likes">
+                                    <button class="likes_button_design"> 103</button>
+                                </div>
+
+                                <div class="button_reserve">
+                                    <button class="reserve_button_design"> 예매 </button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </li>
+
+
+
+
+
+
+
+
+                </ul>
+
+
+
+
+
+
+            </div>
+
+        </div>
+        <!-- 여기 end ⭐⭐⭐⭐⭐ -->
+
+        
+    </div>
+
+
+
+
+
+</body>
+
+</html>

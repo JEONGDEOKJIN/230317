@@ -140,7 +140,7 @@ function idPwChecking () {
     
     // 비교
     if ( objArr[0]['id'] == objArrLogin[0]['id'] && objArr[0]['pw1st'] == objArrLogin[0]['pw'] ) {
-        alert ("회원가입값이랑 로그인이랑 같아🤩")
+        alert ("회원가입값이랑 로그인이랑 같아~!🤩")
     } else {
         alert( "다시 기입해~!👏")
     }

@@ -1,0 +1,461 @@
+
+/* 전체 테두리 쌓는 부분 */
+.inner_wrap {
+    position: relative;
+    width: 80%;
+
+    /* 양쪽 여백 맞출 때, auto⭐⭐⭐⭐⭐⭐⭐ 중요
+            매번 헷갈렸었음 ⭐⭐⭐⭐⭐  */
+    margin: 150px auto;
+    
+
+    height: 2700px;
+    /* background-color: lightcyan; */
+}
+
+
+/* 메뉴 bar 레이아웃 */
+.tab-menu {
+    width: 100%;
+    height: 50px;
+    /* background-color: lightcoral; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* 음..... 지금 이걸 왜 했는지는 아직 모르겠어 📛📛📛📛📛  */
+.tab-menu > input  {
+    display: none;
+}
+
+/* 메뉴 항목들 동일하게 하기 */
+
+
+
+/* 포인터 움직이면 커서 모양이 되도록 */
+.tab-menu > input + label {
+    /* display: inline-block; */
+    /* padding: 30px; */
+    
+    height: 30px;
+    width: 300px;
+
+    border: 1px solid lightgray;
+
+    /* background-color: lightblue; */
+    /* 😥😥😥 선 겹치는거는❓❓❓  */
+    color: black;
+    font-size: 15px;
+
+    cursor: pointer;
+
+    /* 글씨 가운데 정렬이 이렇게 깝깝했을 줄이야 
+            ⭐⭐⭐ https://www.codingfactory.net/10630 ⭐⭐⭐⭐⭐  */
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+.tab-menu > input:checked + label {
+    background: antiquewhite;
+    color: blue;
+
+}
+
+
+.search_movie_list_area { 
+    /* background-color: lightpink; */
+    width: 100%;
+    height: 72px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap_date_letter_result {
+    display: flex;
+}
+
+.order_by_date {
+    padding: 10px;
+    font-size: 13px;
+}
+
+.order_by_division {
+    padding: 10px;
+    font-size: 13px;
+}
+
+
+.order_by_letter {
+    padding: 10px;
+    font-size: 13px;
+}
+
+.search_result {
+    padding: 10px;
+    font-size: 13px;
+}
+
+
+
+
+.text-box {
+    display: flex; 
+    position: relative;
+    height: 25px;
+}
+
+
+
+.movie_total_wrap {
+    position: absolute;
+    left: 80px;
+    top: 50px;
+}
+
+
+
+
+
+.box {
+    width: 500px;
+    height: 600px;
+    background-color: #000;
+    margin: 0 auto;
+    display: none;
+
+}
+
+
+/* ✅ 튀어나오게 하기 - 박스오피스 boxoffice */
+input[class="tab01"]:checked ~ .item01 {
+    display: block;
+    /* color: wheat */
+    
+    /* display: block; */
+    /* color: black; */
+}
+
+
+
+.item1{ 
+    background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg");
+    background-repeat: no-repeat;
+    
+    /* ✅ 가운데로 오게 하기  */
+    
+}
+
+
+/* hover 작업 
+        1) 디자인용 class 랑 hover 용 class 랑 다르게 ⭐⭐⭐ 왜지?  
+        ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ */
+.item_poster:hover .sub_tag{
+    display: block;
+}
+
+.sub_tag {
+
+    /* 위치값 수정 */
+    position: absolute;
+    
+    
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    
+    /* ⭐⭐⭐⭐⭐⭐⭐ 처음에 안 보이다가 -> hover 되면 보이게 하는 기능
+            ⭐⭐⭐ 핵심요소 */
+    display: none;
+
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 230px;
+    height : 330px;
+    /* top: 145px; */
+    /* left: 110px; */
+}
+
+.movie_summary {
+    margin: 10px;
+    font-size: 14px;
+}
+
+
+/* 처음에 안 나오게 숨기기 
+        display: none; */
+.movie_list_upcoming {
+    display: none;
+}
+.movie_list_special {
+    display: none;
+}
+.movie_list_film_sc {
+    display: none;
+}
+.movie_list_classic_sc {
+    display: none;
+}
+
+
+
+
+/* ✅ 튀어나오게 하기 - 상영예정작 upcoming */
+input[class="tab02"]:checked ~ .item02 {
+    display: block;
+    /* color: wheat */
+    
+    /* display: block; */
+    /* color: black; */
+
+}
+
+
+
+
+
+/* ✅ 튀어나오게 하기 - 특별상영 */
+input[class="tab03"]:checked ~ .item03 { 
+    display: inline-block;
+    
+}
+
+/* 필름 소사이어티 튀어나오게 하기 ⭐⭐⭐⭐⭐ 핵심기술*/
+input[class="tab04"]:checked ~ .item04 { 
+    display: block;
+
+}
+
+/* 클래식 소사이어티 */
+input[class="tab05"]:checked ~ .item05 { 
+    display: block;
+}
+
+/* ❓ 사진 부분은 없어지지 않고 남아있네?  */
+/* .item1:hover {
+    color: white ;
+    background-color: rgb(0, 0, 0);
+    
+} */
+
+
+/* 연습용임! ⭐⭐⭐ 나중에 지우기  */
+/* input[class="tab02"]:checked ~ .item2 {
+    display: block;
+    color: rebeccapurple;
+} */
+
+
+
+
+
+/* 검색 bar 
+        ❓ 왜 before 로 해야하지? 
+        test box 태그 '앞' 에 {이 CSS} 를 넣을거야!
+        그럼, 어떤 CSS 인데?  
+        */
+.text-box::before {
+    
+    /* 1) 부모태그랑 연결해서 2) 위치 조절 3) 띄워져 있게 함  */
+    position: absolute;
+
+    left: 152px;
+    top: 5px;
+
+    /* 원래는? 넣고 싶은 텍스트 있으면 넣으면 돼 */
+    content: " ";
+
+    /* 이미지 넣기 */
+    background-image: url("https://img.megabox.co.kr/static/pc/images/common/btn/btn-search-input.png");
+    background-repeat: no-repeat;
+
+    width: 20px;
+    height: 20px;
+
+}
+
+/* 📛📛📛 침범하지 않게 하는거 구현을 못 하겠네  */
+.text-box input {
+    /* background-color: aqua; */
+    padding-right: 5px ;
+}
+
+
+
+/* 영화 담는 곳 레이아웃 */
+.movie_list_boxoffice {
+    width: 1300px;
+    height: 1500px;
+    /* background-color: gray;/ */
+}
+
+
+/* ol li 태그 */
+
+
+.movie_list_inner {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+
+
+.movie_poster_area {
+    width: 230px;
+    height: 330px;
+    border: 1px solid;
+    /* background-color: lightblue; */
+
+    /* 위치설정 */
+    position: relative;
+}
+
+
+.movie_list_unordered li {
+    /* 밑으로 떨어지지 않고, 옆으로 붙게 */
+    float: left;
+    
+    /* 쩜 없애는 기능 */
+    list-style: none;
+
+    margin-right: 60px;
+    margin-top: 65px;
+
+}
+
+
+.movie_item_poster {    
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    object-fit: cover;
+}
+
+.movie_title_area { 
+    display: flex;
+    align-items: center;
+
+    width: 230px;
+    height: 30px;
+    /* background-color: green; */
+
+}
+
+.age_12 {
+    background-image: url("https://img.megabox.co.kr/static/pc/images/common/txt/12_46x46.png");
+    background-repeat: no-repeat;
+    
+    /* 연결 이미지 사이즈 조절
+        📛📛 여기가 살짝 조금 안 된다. / 매번 안 되는게 안 된다.  */
+    width: 50px;
+    height: 45px;
+    transform: scale(0.4);   
+
+}
+
+.movie_title {
+    
+
+    /* 글씨 사이즈가 마음에 안 듦 📛📛 */
+    /* font-size: 14px; */
+    
+    /* ⭐⭐⭐ 제목 줄이는데 중요함 (점점점) ⭐⭐⭐ */
+    /* 줄바꿈 속성을 없애준다. 한줄로 택스트를 만들어준다. */
+    white-space: nowrap;
+
+    /* 부모보다 자식 태그가 넘치면 지워버림 */
+    overflow: hidden;
+
+    /* 텍스트가 부모 태그의 넓이보다 길어지면 점점점 처리 ⭐⭐⭐ */
+    text-overflow: ellipsis;
+
+}
+
+.movie_rate_date_area { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+
+
+    align-items: center;
+    /* background-color: green; */
+
+    height: 30px;
+
+}
+
+
+.wrap_title_rate_date {
+    position: absolute;
+    top: 340px;
+
+}
+
+
+
+.movie_title_area { 
+    /* position: absolute; */
+    
+
+    display: flex;
+    align-items: center;
+
+    width: 230px;
+    height: 20px;
+    /* background-color: blue; */
+}
+
+.movie_rate {
+    font-size: 13px;
+}
+
+
+.movie_date {
+    font-size: 13px;
+}
+
+
+.movie_button_area{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+
+    /* background-color: yellowgreen; */
+
+    height: 50px;
+
+}
+
+.likes_button_design { 
+    float: left;
+    height: 30px;
+    width: 72px;
+    border-radius: 5px;
+    /* margin: 0; */
+    /* padding: 0 5px; */
+    /* font-size: .8667em; */
+    border-color: #ebebeb;
+
+}
+
+.reserve_button_design { 
+    float: left;
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+
+    color: white;
+    border-color: rgb(93, 7, 114);
+    background-color: rgb(93, 7, 114);
+}
+
+
