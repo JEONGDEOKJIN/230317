@@ -15,182 +15,78 @@
 
 
 
-    
+
 
     <!-- 로그인 페이지 전체 배경 -->
     <div class="login-background-image-area">
-    
-        <!-- 로그인창 배경-->
+
+        <!-- 로그인 배경-->
         <div class="backgroundImage-container">
 
-            <img class="backgroundImage-content" src="./메이플스토리배경_로그인창합치기_waifu2x_art_noise1_scale.png" alt="">
+            
+            <!-- 1) 배경 이미지 넣기 -->
+            <img class="backgroundImage-content" src="./maple_background_image.png" alt="">
+            
 
-        </div>
+            <!-- 2) 로그인 창 -->
+            <div class="login-maple-concept-area">
 
-        <!-- 로그인 창 전체 영역 -->
-        <div class="login-whole-area ">
+                <!-- a) 메이플 id -->
+                
+                <div class="login-mapletab-area">
 
-            <!-- 1. 로그인, 아이디, 비번 입력 부분 -->
-            <div class="login-id-pw-area">
+                    <div class="mapletab-leaf-title">
 
-                <!-- 왼쪽 영역  -->
-                <div class="login-left-area">
-
-                    <!-- 1) 계정 넣는 곳 -->
-                    <div class="wrap-id-input-label">
-
-                        <!-- 계정 아이콘 변경 -->
-                        <label class="id-label-deco" for=""> <img src="./계정.png" alt="">  </label>
-                        <input class="id-input-deco" type="text">
-                        
-                    </div>
-                    
-                    <!-- 2) 비밀번호 넣는 곳 -->
-                    
-                    <div class="wrap-pw-input-label">
-
-                        <!-- 비밀번호 -->
-                        <label class="pw-label-deco" for=""> <img src="./비밀번호.png" alt="">   </label>
-                        <input class="pw-input-deco" type="password">
-                        
-                    </div>
-
-                </div>
-
-
-                <!-- 오른쪽 영역 -->
-                <div class="login-right-area">
-
-                    <!-- 3) 로그인 버튼 -->
-
-                    <div class="wrap-login-button">
-
-                        <button class="login-button">
-                            <p class="login-button-font" onclick="loginProcess()"> <img src="./로그인.png" alt="">  </p>
-                        </button>
-
+                        <img class="mapletab-leaf" src="   https://cdn-icons-png.flaticon.com/512/2831/2831965.png " alt="">
+                        <h2>메이플 ID</h2>
 
                     </div>
 
                 </div>
+                
+                <!-- b) id, 비번, 로그인 -->
+                
+                <div class="login-id-pw-login-area">
+
+                </div>
+                
+                <!-- c) id 저장, id 찾기, 비번찾기  -->
+                
+                <div class="login-idsave-pwsearch-findpw-area">
+
+                </div>
+                
+                <!-- d) id 만들기, 홈페이지, 끝내기 -->
+                <div class="login-idcreate-homepage-exit-area">
+
+                </div>
+                
 
             </div>
-
-            <!-- 빈공간 -->
-            <div class="empty-area-1">
-
-
-            </div>
-
-            <!-- 2. 계정 저장, 계정 찾기, 비번 찾기 -->
-            <div class="idSave-findIdPw">
-
-                <!-- 1) 계정 저장 -->
-                <div class="idSave_area"> 
-                    
-                    <input type="checkbox">
-                    <label for=""> <img src="./계정저장하기.png" alt=""> </label>
-                
-                </div>
-                
-                <!-- 2) 계정 찾기 -->
-
-                <div class="findId_area">
-
-                    <button> <img src="./계졍찾기.png" alt=""> </button>                    
-                
-                </div>
-                
-                
-                <!-- 3) 비번 찾기 -->
-                <div class="findPw_area">
-
-                    <button> <img src="./비번찾기.png" alt="">  </button>                    
-                
-                </div>
-                
-            </div>
-
-            <!-- 빈공간 -->
-            <div class="empty-area-2">
-
-
-            </div>
-
-            <!-- 홈페이지 가입, 홈페이지, 나가기 -->
-            <div class="join-homepage-exit">
-
-
-                <!-- 1) 홈페이지 가입 -->
-                <div class="wrap-join-button">
-
-                    <button class="join-button" onclick="popupCreateId()">
-                        <!-- 팝업 시 뜨는 페이지는 밑에 만들예정✅ -->
-
-                        <!--가입하기 버튼 교체 -->
-                        <img class="join-button-font "src="./가입하기.png" alt="">
-                        <!-- <p class="join-button-font">가입하기</p> -->
-                    
-                    </button>
-
-                </div>
-                
-                
-                <!-- 2) 홈페이지  -->
-                
-                <div class="wrap-homepage-button">
-
-                    <button class="homepage-button">
-
-                        <!-- 홈페이지 버튼 교체 -->
-                        <img class="homepage-button-font" src="./홈페이지.png" alt="">
-                        <!-- <p class="homepage-button-font">홈페이지</p> -->
-                    
-                    </button>
-
-                </div>
-                
-                <!-- 3) 끝내기 -->
-                
-                <div class="wrap-exit-button">
-
-                    <button class="exit-button">
-
-                        <!-- 버튼 교체 -->
-                        <img class="exit-button-font" src="./끝내기.png" alt="">
-                        <!-- <p class="exit-button-font">끝내기 </p> -->
-                        
-
-
-                    </button>
-
-                </div>
-
-            </div>
-
 
 
         </div>
 
+        
     </div>
 
 
 
     <!-- [팝업] 회원가입 -->
-    <div class="popup-user-join-area"> 
+    <div class="popup-user-join-area">
 
         <!-- 회원가입 창 -->
         <div class="create-userid-area">
-            
-            <!-- 오른쪽 상단 x 표시 ✅ 닫힘 버튼 달기 -->
-            
-                <span onclick="popupCreateId()">
-    
-                </span>
-            
-            
 
-            <!-- 회원가입 제목 -->  
+            <!-- 오른쪽 상단 x 표시 ✅ 닫힘 버튼 달기 -->
+
+            <span onclick="popupCreateId()">
+
+            </span>
+
+
+
+            <!-- 회원가입 제목 -->
             <div class="userid-title-container">
 
                 <h2 class="userid-title-content">
@@ -204,8 +100,8 @@
 
                 <div class="userid-photo-content">
                     <p>사진넣기</p>
-                </div>              
-                
+                </div>
+
             </div>
 
             <!-- 계정 / 아이디 /  -->
@@ -215,39 +111,39 @@
                 <input type="text" placeholder="계정을 입력하세요" class="userid-email">
 
             </div>
-            
+
             <!-- 비밀번호 1차 -->
-            
+
             <div class="userpw-create-container">
-                
+
                 <!-- ⭐⭐⭐ 자바스크립트 input email 검색하니까 mdn 에서 나옴 -->
                 <input type="password" placeholder="비밀번호" class="user-pw1-email">
-                
+
             </div>
-            
+
             <!-- 비밀번호 확인 2차 -->
             <div class="userpw-2nd-create-container">
 
                 <input type="password" placeholder="비밀번호 확인" class="user-pw2-email">
 
             </div>
-            
+
 
             <!-- 이름 -->
-            <div class="username-create-container"> 
+            <div class="username-create-container">
 
                 <!-- ✅ 여기에 빨간거, 가상선택자로 해봐야 하나 ⭐⭐⭐⭐⭐ -->
                 <label for="" class="user-name-text"> 이름 </label>
                 <input type="text" placeholder="이름을(를) 입력하세요." class="user-name">
 
             </div>
-            
+
             <!-- 성별 -->
 
             <div class="user-malefemale-container">
-                
+
                 <!-- 1) 성별 area  -->
-                <div class="user-name-text-container"> 
+                <div class="user-name-text-container">
                     <p class="user-name-text"> 성별 </p>
 
                 </div>
@@ -257,7 +153,7 @@
 
                     <input type="radio" class="male_checked">
                     <label for=""> 남자 </label>
-                    
+
                 </div>
 
                 <!-- 3) 여자 체크 area -->
@@ -271,13 +167,13 @@
             </div>
 
             <!-- 생년월일 📛 -->
-            <div class="birthday-create-container"> 
+            <div class="birthday-create-container">
 
                 <div class="birday-text">
 
                     <!-- ✅ 여기에 빨간거, 가상선택자로 해봐야 하나 ⭐⭐⭐⭐⭐ -->
                     <label for="" class="user-name-text"> 생년월일 </label>
-                    
+
 
                 </div>
 
@@ -291,9 +187,9 @@
 
             <!-- 가입하기  -->
 
-            <div class="fin-join-container"> 
+            <div class="fin-join-container">
 
-                <button class="fin-join-button" onclick="submitInfo()">  가입하기 </button>
+                <button class="fin-join-button" onclick="submitInfo()"> 가입하기 </button>
 
             </div>
 
@@ -304,7 +200,7 @@
     </div>
 
 
-    
+
 
 
 
