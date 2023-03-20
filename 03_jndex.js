@@ -44,8 +44,6 @@ function divBtn() {
     // 객체 생성하는 기능 
 
 
-
-
 function addArr () {
 
     // input 을 태그명으로 queryselectorAll 메소드 매개변수로 전달해서 -> input 태그를 배열로 가져온다. 

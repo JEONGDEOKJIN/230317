@@ -27,6 +27,7 @@ body {
 
     display: none;
 
+    position: relative;
 }
 
 
@@ -47,7 +48,12 @@ body {
     /* 가운데로 오게 하기 ⭐⭐⭐⭐⭐⭐⭐⭐⭐ 
         이렇게 하면, 화면 사이즈 변경 시켜도 가능  */
     transform: translate(-50%, -50%);
+
+    position: relative;
 }
+
+
+
 
 
 /* 🟦 x 가 표시가 자리할 '위치(영역)' 잡는 곳 */
@@ -106,8 +112,7 @@ body {
         left: 50%; */
 
  /* 반지를 50%, 50% 빼고, 가운데로 오게 하기 */
- transform: translate(-50%, -50%) rotate(-45deg);
-
+transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 
@@ -116,6 +121,6 @@ body {
         /* 동작중 일때는 display 를 block 으로 해줘 */
         /* popupwrap 과 is-active 를 '둘 다' 가지고 있을 때  */
         /* 태그 하나가, 클래스 2개를 가질 때  */
-        .popup-wrap.is-active {
-            display: block;
-        }
+.popup-wrap.is-active {
+    display: block;
+}
